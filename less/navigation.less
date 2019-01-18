@@ -8,16 +8,31 @@
     border-bottom: 2px dashed @silver;
     margin: 10px 0 0 0;
     padding-bottom: 10px;
+
+    @media @mobile {
+        flex-direction: column;
+    }
     h1{
         margin-left: 20%;
+    @media @mobile {
+        margin-right: 20%;
+    
+    }
     }
     nav {
         margin-right: 20%;
+        @media @mobile{
+            margin-left: 17%;
+        }
         a{
         text-decoration: none;
         color: @shark;
         font-size: 1.4rem;
         padding: 2.2rem;
+        @media @mobile {
+            padding: 1.5rem;
+            
+        }
         }
     }       
 }
